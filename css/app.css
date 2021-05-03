@@ -1,0 +1,125 @@
+body {
+    background-color: #0d2235;
+}
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+h1::after {
+    content: '';
+    width: 100px;
+    height:6px;
+    background-color: #66a2fe;
+    display: block;
+}
+.container img {
+    margin-top: 150px;
+}
+
+label {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    height: auto;
+}
+.error {
+    background-color: #b7322c;
+    padding: 1rem;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resultado {
+    color: white;
+
+}
+.resultado h2 {
+    font-weight: bold;
+    color: white;
+}
+
+
+.resultado p {
+    font-size: 18px!important;
+}
+.resultado p span {
+    font-weight: bold;
+}
+p.precio{
+    font-size: 30px!important;
+}
+
+@media (min-width:480px) {
+    form {
+        margin-top: 150px;
+    }
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(245, 244, 244);
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+.sitio-web  {
+    color: white;
+    display: block;
+    font-size: 3rem;
+    max-width: 1200px;
+    margin: 1rem auto;
+    text-decoration: none;
+    margin-top: 8rem ;
+}
+
+.sitio-web:hover {
+    color: rgb(255, 149, 10)
+}
+
+.titulo {
+    margin-top: 6rem;
+    color: white;
+    margin: 1rem auto;
+    text-align: center;
+}
